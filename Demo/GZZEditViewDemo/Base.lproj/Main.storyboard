@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n10-9B-bSn">
+                                <rect key="frame" x="0.0" y="318.5" width="375" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="I5D-c5-GZN"/>
+                                </constraints>
+                                <state key="normal" title="作为提示框使用"/>
+                                <connections>
+                                    <action selector="alertViewButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Vf-Og-TlD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Waj-Cx-KKN">
+                                <rect key="frame" x="0.0" y="258.5" width="375" height="30"/>
+                                <state key="normal" title="作为编辑框使用"/>
+                                <connections>
+                                    <action selector="editViewButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KjW-IF-MFa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kdz-fh-vCQ">
+                                <rect key="frame" x="0.0" y="378.5" width="375" height="30"/>
+                                <state key="normal" title="自定义视图高度"/>
+                                <connections>
+                                    <action selector="changeEditViewHeight:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nvH-fH-B3x"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="n10-9B-bSn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="9Cd-zf-ghV"/>
+                            <constraint firstItem="n10-9B-bSn" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Lyu-rx-Qei"/>
+                            <constraint firstAttribute="trailing" secondItem="n10-9B-bSn" secondAttribute="trailing" id="YUO-yk-dfY"/>
+                            <constraint firstItem="n10-9B-bSn" firstAttribute="top" secondItem="Waj-Cx-KKN" secondAttribute="bottom" constant="30" id="aNR-EN-qMT"/>
+                            <constraint firstItem="n10-9B-bSn" firstAttribute="height" secondItem="Waj-Cx-KKN" secondAttribute="height" id="i0M-fA-2sP"/>
+                            <constraint firstItem="kdz-fh-vCQ" firstAttribute="height" secondItem="Waj-Cx-KKN" secondAttribute="height" id="pw1-0o-N8q"/>
+                            <constraint firstItem="n10-9B-bSn" firstAttribute="width" secondItem="Waj-Cx-KKN" secondAttribute="width" id="ri6-2z-DKT"/>
+                            <constraint firstItem="kdz-fh-vCQ" firstAttribute="width" secondItem="Waj-Cx-KKN" secondAttribute="width" id="yHk-Qe-Jjq"/>
+                            <constraint firstItem="n10-9B-bSn" firstAttribute="centerX" secondItem="Waj-Cx-KKN" secondAttribute="centerX" id="yU3-OD-KIp"/>
+                            <constraint firstItem="kdz-fh-vCQ" firstAttribute="centerX" secondItem="Waj-Cx-KKN" secondAttribute="centerX" id="yvT-np-ljL"/>
+                            <constraint firstItem="kdz-fh-vCQ" firstAttribute="top" secondItem="n10-9B-bSn" secondAttribute="bottom" constant="30" id="zif-Cm-nTp"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
