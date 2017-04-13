@@ -25,7 +25,7 @@ GZZEditView *editView = [GZZEditView editViewWithView:self.view];
 
 **效果图：**
 
-![作为编辑框使用](http://upload-images.jianshu.io/upload_images/1930874-0658a7032ccd6c36.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![作为编辑框使用](http://upload-images.jianshu.io/upload_images/1930874-054df6e76202d284.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 #### 2. 作为提示框使用
 
