@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
 
   s.author             = { "Jonzzs" => "292710547@qq.com" }
 
-  s.source       = { :git => "https://github.com/Jonzzs/GZZEditView.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/Jonzzs/GZZEditView.git", :tag => s.version }
 
   s.source_files  = "GZZEditView/*.{h,m}"
 
