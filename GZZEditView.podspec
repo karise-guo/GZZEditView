@@ -1,19 +1,25 @@
 Pod::Spec.new do |s|
 
-  s.name         = "GZZEditView"
+    s.name         = "GZZEditView"
 
-  s.version      = "1.0.0"
+    s.version      = "1.0.0"
 
-  s.summary      = " GZZEditView 是一个轻量级的编辑框，也可以作为提示框使用，用法非常简单。"
+    s.ios.deployment_target = '8.0'
 
-  s.homepage     = "https://github.com/Jonzzs/GZZEditView"
+    s.summary      = "非常简单易用的轻量级编辑框。"
 
-  s.license      = { :type => "MIT", :file => "LICENSE" }
+    s.homepage     = "https://github.com/Jonzzs/GZZEditView"
 
-  s.author             = { "Jonzzs" => "292710547@qq.com" }
+    s.license              = { :type => "MIT", :file => "LICENSE" }
 
-  s.source       = { :git => "https://github.com/Jonzzs/GZZEditView.git", :tag => s.version }
+    s.author             = { "Jonzzs" => "292710547@qq.com" }
 
-  s.source_files  = "GZZEditView/*.{h,m}"
+    s.social_media_url   = "http://weibo.com/Jonzzs"
+
+    s.source       = { :git => "https://github.com/Jonzzs/GZZEditView.git", :tag => s.version }
+
+    s.source_files  = "GZZEditView/*.{h,m}"
+
+    s.requires_arc = true
 
 end
