@@ -9,11 +9,12 @@
 #### 1. 作为编辑框使用
 
 ```
-GZZEditView *editView = [GZZEditView editViewWithButtonActionBlock:^(NSString *editViewText) {
-        
+GZZEditView *editView = [GZZEditView editViewWithView:self.view];
+[editView setTitle:@"标题"];
+[editView addButtonActionWithBlock:^(NSString *editViewText) {
+    
     NSLog(@"编辑框内容：%@", editViewText);
 }];
-[editView setTitle:@"标题"];
 [editView showEditView];
 ```
 
@@ -24,7 +25,7 @@ GZZEditView *editView = [GZZEditView editViewWithButtonActionBlock:^(NSString *e
 #### 2. 作为提示框使用
 
 ```
-GZZEditView *editView = [GZZEditView editViewWithButtonActionBlock:nil];
+GZZEditView *editView = [GZZEditView editViewWithView:self.view];
 [editView setTitle:@"标题"];
 [editView setEditViewText:@"提示内容..."];
 [editView setAllowTextUpper:NO]; // 不限制字数
@@ -39,13 +40,14 @@ GZZEditView *editView = [GZZEditView editViewWithButtonActionBlock:nil];
 #### 3. 自定义视图高度
 
 ```
-GZZEditView *editView = [GZZEditView editViewWithButtonActionBlock:^(NSString *editViewText) {
-        
-    NSLog(@"编辑框内容：%@", editViewText);
-}];
+GZZEditView *editView = [GZZEditView editViewWithView:self.view];
 [editView setTitle:@"标题"];
 [editView setTextNumberUpper:1000]; // 限制字数 1000
 [editView setEditViewHeight:500]; // 高度 500
+[editView addButtonActionWithBlock:^(NSString *editViewText) {
+    
+    NSLog(@"编辑框内容：%@", editViewText);
+}];
 [editView showEditView];
 ```
 
@@ -67,6 +69,15 @@ GZZEditView *editView = [GZZEditView editViewWithButtonActionBlock:^(NSString *e
  关闭输入框
  */
 - (void)hideEditView;
+```
+
+```
+/**
+ 添加按钮事件
+
+ @param block 按钮事件的 block
+ */
+- (void)addButtonActionWithBlock:(void(^)(NSString *editViewText))block;
 ```
 
 ```

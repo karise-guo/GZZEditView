@@ -7,7 +7,6 @@
 //
 
 #import "GZZEditView.h"
-#import "AppDelegate.h"
 
 /* 得到屏幕尺寸 */
 #define kScreenWidth [UIScreen mainScreen].bounds.size.width
@@ -83,10 +82,11 @@ NSInteger const TEXT_NUMBER_UPPER = 150; // 默认字数限制
 }
 
 
-+ (instancetype)editViewWithButtonActionBlock:(void(^)(NSString *editViewText))block {
++ (instancetype)editViewWithView:(UIView *)view {
     
     GZZEditView *editView = [[self alloc] init];
-    editView.onButtonClickedBlock = block;
+    editView.frame = CGRectMake(0, 0, kScreenWidth, kScreenHeight);
+    [view.window addSubview:editView];
     
     return editView;
 }
@@ -315,9 +315,6 @@ NSInteger const TEXT_NUMBER_UPPER = 150; // 默认字数限制
     }
     
     /* 显示视图 */
-    self.frame = CGRectMake(0, 0, kScreenWidth, kScreenHeight);
-    AppDelegate *appDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
-    [appDelegate.window addSubview:self];
     [UIView animateWithDuration:ANIMATION_DURATION animations:^ {
         
         self.alpha = 1;
@@ -339,11 +336,13 @@ NSInteger const TEXT_NUMBER_UPPER = 150; // 默认字数限制
     [UIView animateWithDuration:ANIMATION_DURATION animations:^ {
         
         self.alpha = 0;
-        
-    } completion:^(BOOL finished) {
-        
-        [self removeFromSuperview];
     }];
+}
+
+
+- (void)addButtonActionWithBlock:(void(^)(NSString *editViewText))block {
+    
+    self.onButtonClickedBlock = block;
 }
 
 

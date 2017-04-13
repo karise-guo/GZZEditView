@@ -11,7 +11,7 @@
 @interface GZZEditView : UIView
 
 
-+ (instancetype)editViewWithButtonActionBlock:(void(^)(NSString *editViewText))block;
++ (instancetype)editViewWithView:(UIView *)view;
 
 
 /**
@@ -24,6 +24,14 @@
  关闭输入框
  */
 - (void)hideEditView;
+
+
+/**
+ 添加按钮事件
+
+ @param block 按钮事件的 block
+ */
+- (void)addButtonActionWithBlock:(void(^)(NSString *editViewText))block;
 
 
 /**

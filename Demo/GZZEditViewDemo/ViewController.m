@@ -20,11 +20,12 @@
  */
 - (IBAction)editViewButtonClick:(id)sender {
     
-    GZZEditView *editView = [GZZEditView editViewWithButtonActionBlock:^(NSString *editViewText) {
+    GZZEditView *editView = [GZZEditView editViewWithView:self.view];
+    [editView setTitle:@"标题"];
+    [editView addButtonActionWithBlock:^(NSString *editViewText) {
         
         NSLog(@"编辑框内容：%@", editViewText);
     }];
-    [editView setTitle:@"标题"];
     [editView showEditView];
 }
 
@@ -34,7 +35,7 @@
  */
 - (IBAction)alertViewButtonClicked:(id)sender {
     
-    GZZEditView *editView = [GZZEditView editViewWithButtonActionBlock:nil];
+    GZZEditView *editView = [GZZEditView editViewWithView:self.view];
     [editView setTitle:@"标题"];
     [editView setEditViewText:@"提示内容..."];
     [editView setAllowTextUpper:NO]; // 不限制字数
@@ -48,13 +49,14 @@
  */
 - (IBAction)changeEditViewHeight:(id)sender {
     
-    GZZEditView *editView = [GZZEditView editViewWithButtonActionBlock:^(NSString *editViewText) {
-        
-        NSLog(@"编辑框内容：%@", editViewText);
-    }];
+    GZZEditView *editView = [GZZEditView editViewWithView:self.view];
     [editView setTitle:@"标题"];
     [editView setTextNumberUpper:1000]; // 限制字数 1000
     [editView setEditViewHeight:500]; // 高度 500
+    [editView addButtonActionWithBlock:^(NSString *editViewText) {
+        
+        NSLog(@"编辑框内容：%@", editViewText);
+    }];
     [editView showEditView];
 }
 

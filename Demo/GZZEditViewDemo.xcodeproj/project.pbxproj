@@ -13,7 +13,7 @@
 		C5D4AC491E82593200577215 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5D4AC471E82593200577215 /* Main.storyboard */; };
 		C5D4AC4B1E82593200577215 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5D4AC4A1E82593200577215 /* Assets.xcassets */; };
 		C5D4AC4E1E82593200577215 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5D4AC4C1E82593200577215 /* LaunchScreen.storyboard */; };
-		C5D4AC5C1E82599F00577215 /* GZZEditView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D4AC5B1E82599F00577215 /* GZZEditView.m */; };
+		C5D4AC9F1E8273DC00577215 /* GZZEditView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D4AC9E1E8273DC00577215 /* GZZEditView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,8 +27,8 @@
 		C5D4AC4A1E82593200577215 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C5D4AC4D1E82593200577215 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C5D4AC4F1E82593200577215 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C5D4AC5A1E82599F00577215 /* GZZEditView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GZZEditView.h; sourceTree = "<group>"; };
-		C5D4AC5B1E82599F00577215 /* GZZEditView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GZZEditView.m; sourceTree = "<group>"; };
+		C5D4AC9D1E8273DC00577215 /* GZZEditView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GZZEditView.h; sourceTree = "<group>"; };
+		C5D4AC9E1E8273DC00577215 /* GZZEditView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GZZEditView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +47,7 @@
 			children = (
 				C5D4AC3D1E82593200577215 /* GZZEditViewDemo */,
 				C5D4AC3C1E82593200577215 /* Products */,
+				C5D4AC981E82736D00577215 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,7 +62,7 @@
 		C5D4AC3D1E82593200577215 /* GZZEditViewDemo */ = {
 			isa = PBXGroup;
 			children = (
-				C5D4AC591E82599F00577215 /* GZZEditView */,
+				C5D4AC9C1E8273DC00577215 /* GZZEditView */,
 				C5D4AC411E82593200577215 /* AppDelegate.h */,
 				C5D4AC421E82593200577215 /* AppDelegate.m */,
 				C5D4AC441E82593200577215 /* ViewController.h */,
@@ -83,11 +84,18 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		C5D4AC591E82599F00577215 /* GZZEditView */ = {
+		C5D4AC981E82736D00577215 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C5D4AC5A1E82599F00577215 /* GZZEditView.h */,
-				C5D4AC5B1E82599F00577215 /* GZZEditView.m */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C5D4AC9C1E8273DC00577215 /* GZZEditView */ = {
+			isa = PBXGroup;
+			children = (
+				C5D4AC9D1E8273DC00577215 /* GZZEditView.h */,
+				C5D4AC9E1E8273DC00577215 /* GZZEditView.m */,
 			);
 			path = GZZEditView;
 			sourceTree = "<group>";
@@ -164,7 +172,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C5D4AC5C1E82599F00577215 /* GZZEditView.m in Sources */,
+				C5D4AC9F1E8273DC00577215 /* GZZEditView.m in Sources */,
 				C5D4AC461E82593200577215 /* ViewController.m in Sources */,
 				C5D4AC431E82593200577215 /* AppDelegate.m in Sources */,
 				C5D4AC401E82593200577215 /* main.m in Sources */,
@@ -324,6 +332,7 @@
 				C5D4AC541E82593200577215 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
