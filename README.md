@@ -20,7 +20,7 @@ GZZEditView *editView = [GZZEditView editViewWithView:self.view];
 
 **效果图：**
 
-![作为编辑框使用](http://upload-images.jianshu.io/upload_images/1930874-7a8d007039fb1e58.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![作为编辑框使用](http://upload-images.jianshu.io/upload_images/1930874-0658a7032ccd6c36.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 #### 2. 作为提示框使用
 
@@ -35,7 +35,7 @@ GZZEditView *editView = [GZZEditView editViewWithView:self.view];
 
 **效果图：**
 
-![作为提示框使用](http://upload-images.jianshu.io/upload_images/1930874-38062c6b949b0925.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![作为提示框使用](http://upload-images.jianshu.io/upload_images/1930874-5f03f9cb45d35ba4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 #### 3. 自定义视图高度
 
@@ -53,7 +53,7 @@ GZZEditView *editView = [GZZEditView editViewWithView:self.view];
 
 **效果图：**
 
-![自定义视图高度](http://upload-images.jianshu.io/upload_images/1930874-2da7dcd39905da01.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![自定义视图高度](http://upload-images.jianshu.io/upload_images/1930874-7f02191e95d3ea09.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ## 所有的属性方法
 
@@ -173,5 +173,3 @@ GZZEditView *editView = [GZZEditView editViewWithView:self.view];
 ---
 
 > 大致用法就是这样，有不足的地方可以提出来，持续更新，大家也可以到 [我的简书](http://www.jianshu.com/u/63659e722f3b) 去看看，会不定期更新一些【iOS 开发】的常用知识与方法。
-
-**将来的你，一定会感激现在拼命的自己，愿作者与读者的开发之路无限美好，另转载请注明原作者与原文链接，谢谢。**
