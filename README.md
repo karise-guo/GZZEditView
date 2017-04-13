@@ -1,8 +1,13 @@
 # GZZEditView
 
-> 这是一个轻量级的编辑框，也可以作为提示框使用，用法非常简单。
+> 这是一个自己写的编辑框，非常轻量级，也可以作为提示框使用，用法非常简单 。
 
 ---
+
+## 集成方法：
+
+* 将 `GZZEditView.h` 和 `GZZEditView.m` 拷贝到项目中（后续会支持 `CocoaPods`集成）。
+* 添加头文件 `#import "GZZEditView.h"` 。
 
 ## 基本用法：
 
@@ -55,7 +60,7 @@ GZZEditView *editView = [GZZEditView editViewWithView:self.view];
 
 ![自定义视图高度](http://upload-images.jianshu.io/upload_images/1930874-7f02191e95d3ea09.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-## 所有的属性方法
+## 所有的属性方法：
 
 ```
 /**
@@ -172,4 +177,4 @@ GZZEditView *editView = [GZZEditView editViewWithView:self.view];
 
 ---
 
-> 大致用法就是这样，有不足的地方可以提出来，持续更新，大家也可以到 [我的简书](http://www.jianshu.com/u/63659e722f3b) 去看看，会不定期更新一些【iOS 开发】的常用知识与方法。
+> 大致用法就是这样，有不足的地方可以[提在这里](http://www.jianshu.com/p/80fe73dda5e2)，持续更新，大家可以把例子 `clone` 下来看一下，后续会支持 `CocoaPods` 集成，大家也可以到 [我的简书](http://www.jianshu.com/u/63659e722f3b) 去看看，会不定期更新一些【iOS 开发】的常用知识与方法。
