@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
 
   s.name         = "GZZEditView"
 
-  s.version      = "0.0.1"
+  s.version      = "1.0.0"
 
   s.summary      = " GZZEditView 是一个轻量级的编辑框，也可以作为提示框使用，用法非常简单。"
 
