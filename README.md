@@ -6,7 +6,15 @@
 
 ## 集成方法：
 
-* 将 `GZZEditView.h` 和 `GZZEditView.m` 拷贝到项目中（后续会支持 `CocoaPods`集成）。
+### 1. 将文件拷贝到项目中
+
+* 将 `GZZEditView.h` 和 `GZZEditView.m` 拷贝到项目中 。
+* 添加头文件 `#import "GZZEditView.h"` 。
+
+### 2. CocoaPods 集成
+
+* 将 `pod 'GZZEditView'` 添加到项目的 `podfile` 中。
+* 执行 `pod install` 安装。
 * 添加头文件 `#import "GZZEditView.h"` 。
 
 ## 基本用法：
@@ -177,4 +185,8 @@ GZZEditView *editView = [GZZEditView editViewWithView:self.view];
 
 ---
 
-> 大致用法就是这样，有不足的地方可以[提在这里](http://www.jianshu.com/p/80fe73dda5e2)，持续更新，大家可以把例子 `clone` 下来看一下，后续会支持 `CocoaPods` 集成，大家也可以到 [我的简书](http://www.jianshu.com/u/63659e722f3b) 去看看，会不定期更新一些【iOS 开发】的常用知识与方法。
+> 大致用法就是这样，有不足的地方可以[提在这里](http://www.jianshu.com/p/80fe73dda5e2)，持续更新，大家可以把例子 `clone` 下来看一下。
+
+**将来的你，一定会感激现在拼命的自己，愿作者与读者的开发之路无限美好，另转载请注明原作者与原文链接，谢谢。**
+
+**我的传送门：**[简书](http://www.jianshu.com/u/63659e722f3b)、[微博](http://weibo.com/Jonzzs)、[GitHub](https://github.com/Jonzzs) 。
