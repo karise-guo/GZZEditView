@@ -1,5 +1,8 @@
 # GZZEditView
 
+![](https://img.shields.io/github/license/mashape/apistatus.svg)
+![](https://img.shields.io/badge/pod-1.0.0-green.svg)
+
 > 这是一个自己写的编辑框，非常轻量级，也可以作为提示框使用，用法非常简单 。
 
 ---
