@@ -188,7 +188,7 @@ GZZEditView *editView = [GZZEditView editViewWithView:self.view];
 
 ---
 
-> 大致用法就是这样，有不足的地方可以[提在这里](http://www.jianshu.com/p/80fe73dda5e2)，持续更新，大家可以把例子 `clone` 下来看一下。
+> 大致用法就是这样，有不足的地方可以 [提在这里](http://www.jianshu.com/p/80fe73dda5e2) ，持续更新，大家可以把例子 `clone` 下来看一下。
 
 **将来的你，一定会感激现在拼命的自己。**
 
