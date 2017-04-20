@@ -69,7 +69,7 @@ GZZEditView *editView = [GZZEditView editViewWithView:self.view];
 
 **效果图：**
 
-![自定义视图高度](http://upload-images.jianshu.io/upload_images/1930874-7f02191e95d3ea09.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![自定义视图高度](http://upload-images.jianshu.io/upload_images/1930874-d23805ea1f26f95a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ## 所有的属性方法：
 
