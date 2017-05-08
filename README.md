@@ -192,4 +192,4 @@ GZZEditView *editView = [GZZEditView editViewWithView:self.view];
 
 **将来的你，一定会感激现在拼命的自己，愿自己与读者的开发之路无限美好。**
 
-**我的传送门：** [博客](https://jonzzs.github.io) 、[简书](http://www.jianshu.com/u/63659e722f3b) 、[微博](http://weibo.com/Jonzzs) 、[GitHub](https://github.com/Jonzzs) 。
+**我的传送门：** [博客](http://jonzzs.oschina.io) 、[简书](http://www.jianshu.com/u/63659e722f3b) 、[微博](http://weibo.com/Jonzzs) 、[GitHub](https://github.com/Jonzzs) 。
